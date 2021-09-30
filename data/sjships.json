@@ -1,0 +1,196 @@
+{
+	"sjship": [
+		{
+			"name": "Elven Flitter",
+			"source": "SJ-LotV",
+			"page": 51,
+			"value": "10000 gp",
+			"tonnage": 1,
+			"crew": 1,
+			"passenger": 0,
+			"hullPoints": 1,
+			"manoeuvreClass": "B",
+			"landingLand": true,
+			"landingWater": true,
+			"powerType": "Minor or Major Helm",
+			"shipRating": "As Helmsman",
+			"armourRating": 8,
+			"cargo": "1/2 ton",
+			"keelLength": "20 ft.",
+			"beamLength": "5 ft.",
+			"immune": [
+				"poison",
+				"psychic",
+				"lightning"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "ships/flitter.jpg"
+						}
+					}
+				],
+				"entries": [
+					"The flitter is the smallest standard ship in fantasy space and has little more than a modified spelljammer helm tucked within its small butterfly shape. It carries a single passenger/captain/helmsman, who sits just ahead of the wings. The flitter is not recommended for long trips, given its small size and delicate construction. Travelling in a flitter has been compared to riding a tireless horse for several days\u2014you get where you're going, but not very comfortably.",
+					"The flitter has insufficient interior space for anything but personal items in its tiny cargo hold. The ship is too small to carry any large weaponry. The flitter is really nothing more than an extension of the user's own form.",
+					{
+						"name": "Ship Uses",
+						"type": "section",
+						"entries": [
+							"{@b Messenger:} In its spelljamming configuration, the flitter is best at carrying light goods over short interstellar distances. The lightest good to carry is information, so the flitter  often serves as a messenger between elven fleets separated by the void or in different spheres entirely. Such missions are dangerous for these messengers, called in their tongue \"lone riders.\"",
+							"{@b Scout:} Similarly, the flitter is an excellent reconnaissance and espionage ship, capable of slipping into small areas and making planet-fall. Heading for the nearest large solar body is a favourite tactic for the \"lone rider\" seeking to escape from dangerous pursuers.",
+							"{@b Landing Craft:} Sometimes owners strip the spelljamming engine out of a flitter and replace it with a more conventional engine. In this configuration, the flitter is useless for interplanetary voyages, but suitable for short hops into and out of the atmosphere or between ships. The elven navy follows a strict policy of only allowing ships without helms to make planet-fall, so this use of flitters as landing craft is very common.",
+							"{@b Small Fighters:} Another place for a flitter lacking a spelljammer helm is in close combat with enemy ships. Large dreadnoughts of the {@sjship Elven Armada} class carry a number of de-powered flitters. While these ships cannot manage interplanetary flight, they are capable of attacking enemy ships. Controls are set into the seat of the flitter, and the ships are manned by archers or mages, who soften up a target before the main attack."
+						]
+					},
+					{
+						"name": "Other Configurations",
+						"type": "section",
+						"entries": [
+							"{@b De-powered Versions:} Used as landing craft and small fighters as noted, these flitters have their spelljammer helms removed and replaced with simpler, more conventional engines. The common elven engines used for these craft have a movement on the tactical map of 2/round.",
+							"{@b Wild Flitters:} There are a number of abandoned flitters littering the cosmos, the remains of failed missions, undelivered messages, and old battles. Such craft are seriously overgrown, their wings curled in on themselves like seashells. Such ships may have workable engines within, and are Manoeuvre Class E and AC 12 until trimmed back. Repair costs are equivalent to refitting half the hull.",
+							"{@b Firewinds:} This type of de-powered flitter has not been used by the elven fleet since the Unhuman Wars. The firewind is a suicide craft, loaded with flammables and piloted to crash on enemy decks. Used against wooden ships, each flitter has the effect of two hits from a greek fire projector. The firewind pilots are trained to bail out if possible. Elves even used charmed ores and men to fly the ships near the end of the Unhuman War"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Skyrunner",
+			"source": "SJ-WS",
+			"page": 60,
+			"tonnage": 40,
+			"crew": 20,
+			"passenger": 20,
+			"hullPoints": 40,
+			"manoeuvreClass": "D",
+			"landingLand": true,
+			"landingWater": true,
+			"powerType": "Minor or Major Helm",
+			"shipRating": "As Helmsman",
+			"armourRating": 8,
+			"cargo": "10 tons",
+			"keelLength": "130 ft.",
+			"beamLength": "30 ft.",
+			"weapons": [
+				{
+					"type": "Medium Ballista",
+					"count": 2
+				},
+				{
+					"type": "Heavy Ballista",
+					"count": 1
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic",
+				"lightning"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "ships/skyrunner.jpg"
+						}
+					}
+				],
+				"entries": [
+					"The Skyrunner is a galleon with increased Thickness that has been stripped down, producing a manoeuvrable craft with reasonable defences.",
+					"The main difference between this ship and a standard galleon is that the Skyrunner is usually propelled by an Orbus beholder hidden in a secret compartment below deck. The minor helm located on the sterncastle is functional, but Tobart uses it only in emergencies. He mistrusts the unfamiliar device.",
+					"Although the Skyrunner appears to be a seagoing vessel, it is barely sufficient for this purpose. If set down in water, the ship can stay afloat unless it encounters rough waters. Its keel is neither large nor heavy enough to stabilize a craft of this size. The sails and rigging, not designed for mundane use, propel the ship at only half the speed of a normal groundling galleon.",
+					"In a storm, the ship will most likely be lost. Strong winds either rip the sails, snap the rigging, or capsize the vessel.",
+					"As unlikely as it seems, the Skyrunner is more at home on land than at sea. A complex mechanism fills most of the steerage deck. The mechanism extends supports from the sides of the ship: these braces allow it to land upright, and they lock into place when the landing is complete."
+				]
+			}
+		},
+		{
+			"name": "Tyrant Scout",
+			"source": "SJ-WS",
+			"page": 60,
+			"tonnage": 13,
+			"crew": 8,
+			"passenger": 2,
+			"hullPoints": 13,
+			"manoeuvreClass": "B",
+			"landingLand": true,
+			"landingWater": true,
+			"powerType": "Orbus",
+			"shipRating": "2",
+			"armourRating": 2,
+			"cargo": "5 tons",
+			"keelLength": "120 ft.",
+			"beamLength": "90 ft.",
+			"weapons": [
+				{
+					"name": "Magic Missiles",
+					"source": "SJ-WS",
+					"page": 60,
+					"range": "1500 metres",
+					"damage": "6d8",
+					"damageType": "force",
+					"crew": 2,
+					"rateOfFire": "1",
+					"attack": 7,
+					"count": 1
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic",
+				"lightning"
+			],
+			"fluff": {
+				"entries": [
+					"The beholder scout ship, fairly common in the Known Spheres, carries only six ordinary beholders and two Orbi, which propel the ship.",
+					"Tyrant fleets employ these ships for scouting and exploration when they do not want to risk a Queen or large investment of effort. The Arcane produce these smaller vessels at a lower cost than Tyrant Ships, so they make a cheap alternative to larger craft.",
+					"The Tyrant Scout is a smaller variation on the Tyrant Ships. Like their larger brethren, they are shaped like almonds and open to reveal a cavity for each crew member. The ship's functions are built into its body and mentally controlled by the crew. The armour has been stripped and streamlined, reducing its effectiveness but allowing unusual manoeuvrability.",
+					"Scout ships do not use a Queen, so they do not have the offensive capabilities of Tyrant Ships. Instead, they use a device that projects small bolts of power similar to magic missiles."
+				]
+			}
+		}
+	],
+	"sjweapon": [
+		{
+			"name": "Light Ballista",
+			"source": "SJ-CoAS",
+			"page": 41,
+			"cost": "400 gp",
+			"range": "3000 metres",
+			"damage": "1d10",
+			"damageType": "piercing",
+			"crew": 1,
+			"rateOfFire": "1/2",
+			"attack": 4
+		},
+		{
+			"name": "Medium Ballista",
+			"source": "SJ-CoAS",
+			"page": 41,
+			"cost": "600 gp",
+			"range": "2000 metres",
+			"damage": "3d10",
+			"damageType": "piercing",
+			"crew": 2,
+			"rateOfFire": "1/3",
+			"attack": 6
+		},
+		{
+			"name": "Heavy Ballista",
+			"source": "SJ-CoAS",
+			"page": 41,
+			"cost": "800 gp",
+			"range": "1000 metres",
+			"damage": "5d10",
+			"damageType": "piercing",
+			"crew": 4,
+			"rateOfFire": "1/4",
+			"attack": 8
+		}
+	]
+}

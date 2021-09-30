@@ -1,0 +1,622 @@
+{
+	"monster": [
+		{
+			"name": "Beholder Mage",
+			"group": "Beholders",
+			"size": "M",
+			"type": "aberration",
+			"source": "SJ-WS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "19d6 + 38"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 20,
+			"wis": 16,
+			"cha": 17,
+			"save": {
+				"int": "+10",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"conditionImmune": [
+				"prone"
+			],
+			"senses": "darkvision 120 ft.",
+			"passive": 16,
+			"languages": "Deep Speech, Undercommon",
+			"cr": {
+				"cr": "13"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The beholder mage is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, {@hit 7} to hit with spell attacks). The beholder mage has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell greater invisibility}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Eye Rays",
+					"entries": [
+						"Like all beholders, the spellcasting variety focus their magical energies through their eyestalks. Projecting spells through an eyestalk changes the focus of that eye so that the original power is lost forever. Of course, the mage may learn a spell that duplicates the lost ability.",
+						"The beholder shoots one of the following magical eye rays at random, choosing a target it can see within 120 feet of it:",
+						"1. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is {@condition restrained} by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is {@condition incapacitated}.",
+						"If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
+						"2. Disintegration Ray. If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.",
+						"If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
+						"3. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 ({@damage 10d10}) necrotic damage. The target dies if the ray reduces it to 0 hit points."
+					]
+				}
+			],
+			"page": 62,
+			"environment": [
+				"underdark"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/48/beholder.mp3",
+			"languageTags": [
+				"DS",
+				"U"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"P",
+				"N",
+				"O"
+			]
+		},
+		{
+			"name": "Shazogrox",
+			"group": "Beholders",
+			"size": "M",
+			"type": "aberration",
+			"source": "SJ-WS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 66,
+				"formula": "12d6 + 24"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 18,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"int": "+7",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcane": "+7",
+				"perception": "+6"
+			},
+			"conditionImmune": [
+				"prone"
+			],
+			"senses": "darkvision 120 ft.",
+			"passive": 16,
+			"languages": "Common, Deep Speech, Undercommon",
+			"cr": {
+				"cr": "10"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Shazogrox is a 7th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 15, {@hit 7} to hit with spell attacks). Shazogrox knows the following wizard spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell blink}",
+								"{@spell fly}",
+								"{@spell gaseous form}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell fire shield}",
+								"{@spell otiluke's resilient sphere}",
+								"{@spell polymorph}",
+								"{@spell stoneskin}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Eye Rays",
+					"entries": [
+						"Like all beholders, the spellcasting variety focus their magical energies through their eyestalks. Projecting spells through an eyestalk changes the focus of that eye so that the original power is lost forever. Of course, the mage may learn a spell that duplicates the lost ability.",
+						"The beholder shoots one of the following magical eye rays at random, choosing a target it can see within 120 feet of it:",
+						"1. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is {@condition restrained} by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is {@condition incapacitated}.",
+						"If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
+						"2. Disintegration Ray. If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.",
+						"If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
+						"3. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 ({@damage 10d10}) necrotic damage. The target dies if the ray reduces it to 0 hit points."
+					]
+				}
+			],
+			"page": 62,
+			"environment": [
+				"underdark"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/48/beholder.mp3",
+			"languageTags": [
+				"C",
+				"DS",
+				"U"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"P",
+				"N",
+				"O"
+			]
+		},
+		{
+			"name": "Silver Slime",
+			"size": "M",
+			"type": "plant",
+			"source": "SJ-WS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d10 + 10"
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 15,
+			"dex": 6,
+			"con": 13,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"conditionImmune": [
+				"prone",
+				"blinded",
+				"deafened",
+				"exhaustion",
+				"charmed"
+			],
+			"senses": "blindsight 10 ft.",
+			"passive": 5,
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Punch",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d8}) bludgeoning damage."
+					]
+				}
+			],
+			"page": 0,
+			"senseTags": [
+				"BS"
+			],
+			"damageTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Jon Tobart",
+			"isNpc": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "SJ-WS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				19
+			],
+			"hp": {
+				"average": 44,
+				"formula": "7d6 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 18,
+			"wis": 16,
+			"cha": 10,
+			"skill": {
+				"arcana": "+7"
+			},
+			"passive": 13,
+			"languages": "Common, Deep Speech, Infernal, Undercommon",
+			"cr": "7",
+			"action": [
+				{
+					"name": "Rapier +1",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"page": 58,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Shazogrox is a 7th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 15, {@hit 7} to hit with spell attacks). Shazogrox knows the following wizard spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell blink}",
+								"{@spell fly}",
+								"{@spell gaseous form}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell fire shield}",
+								"{@spell otiluke's resilient sphere}",
+								"{@spell polymorph}",
+								"{@spell stoneskin}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"I",
+				"U"
+			],
+			"spellcastingTags": [
+				"I",
+				"CS"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Sentinel",
+			"size": "H",
+			"type": "construct",
+			"source": "SJ-WS",
+			"page": 0,
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 117,
+				"formula": "18d12"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 23,
+			"dex": 8,
+			"con": 10,
+			"int": 17,
+			"wis": 15,
+			"cha": 17,
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"senses": "darkvision 120 ft.",
+			"passive": 20,
+			"languages": "Deep Speech, Undercommon",
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The sentinel is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The sentinel has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Trident",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10+6}) piercing damage."
+					]
+				},
+				{
+					"name": "Trident Beam",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 60 ft., one target. {@h}8 ({@damage 2d6+1}) necrotic damage. The target must save vs constitution or drop unconscious for {@dice 1d4} rounds."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"DS",
+				"U"
+			],
+			"damageTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Incarnation",
+			"size": "M",
+			"type": "elemental",
+			"source": "SJ-WS",
+			"page": 0,
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 117,
+				"formula": "18d12"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 23,
+			"dex": 8,
+			"con": 10,
+			"int": 17,
+			"wis": 15,
+			"cha": 17,
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"senses": "darkvision 120 ft.",
+			"passive": 20,
+			"languages": "Deep Speech, Undercommon",
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The sentinel is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The sentinel has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Trident",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10+6}) piercing damage."
+					]
+				},
+				{
+					"name": "Trident Beam",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 60 ft., one target. {@h}8 ({@damage 2d6+1}) necrotic damage. The target must save vs constitution or drop unconscious for {@dice 1d4} rounds."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"DS",
+				"U"
+			],
+			"damageTags": [
+				"B"
+			]
+		}
+	]
+}
